@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" class="css">
+    <link rel="stylesheet" href="style2.css" class="css">
+    <link rel="stylesheet" href="style3.css" class="css">
+    <link rel="shortcut icon" href="assets/sand-clock.png" type="image/x-icon">
+    <title>Clock | Timer | Stopwatch</title>
+</head>
+
+<body>
+    <div id="container">
+
+        <div id="tabs">
+            <button class="tab" data-tab-id="tabOne">Clock</button>
+            <button class="tab" data-tab-id="tabTwo">Timer</button>
+            <button class="tab" data-tab-id="tabThree">Stopwatch</button>
+        </div>
+
+        <!-- Clock -->
+        <div id="tabOne" class="clock tab-content">
+
+            <div class="clockFrame">
+                <span id="hr"></span>
+                <span>:</span>
+                <span id="mn"></span>
+                <span>:</span>
+                <span id="sc"></span>
+            </div>
+            <div class="clockLabels">
+                <span class="clspan">HRS</span>
+                <span class="clspan">MIN</span>
+                <span class="clspan">SEC</span>
+            </div>
+        </div>
+
+
+        <!-- Timer -->
+        <div id="tabTwo" class="timer tab-content">
+
+            <div class="tinp">
+                <div>
+                    <label for="hours">Hours:</label>
+                    <input id="hours" min="0" placeholder="0">
+                </div>
+                <div>
+                    <label for="minutes">Minutes:</label>
+                    <input id="minutes" min="0" placeholder="0">
+                </div>
+                <div>
+                    <label for="seconds">Seconds:</label>
+                    <input id="seconds" min="0" placeholder="0">
+                </div>
+            </div>
+            <div id="timer-display">00:00:00</div>
+            <div class="tlabels">
+                <span class="tlab">HRS</span>
+                <span class="tlab">MIN</span>
+                <span class="tlab">SEC</span>
+            </div>
+            <div class="tbtn">
+                <button id="start-btn">Start</button>
+                <button id="stop-btn">Stop</button>
+                <button id="reset-btn">Reset</button>
+            </div>
+        </div>
+
+        <!-- StopWatch -->
+
+        <div id="tabThree" class="Stopwatch tab-content">
+            <div id="sDisplay">00:00:00</div>
+            <div class="slabels">
+                <span class="slbl">HRS</span>
+                <span class="slbl">MIN</span>
+                <span class="slbl">SEC</span>
+            </div>
+            <button id="sbtnn1" class="sstrt sbtn">Start</button>
+            <button id="sbtnn2" class="sst sbtn">Stop</button>
+            <button id="sbtnn3" class="srst sbtn">Reset</button>
+        </div>
+
+        <div class="logo"><a href=""><img src="" alt=""></a></div>
+
+    </div>
+    </div>
+
+    <script src="clock and timer.js"></script>
+    <script src="stopwatch.js"></script>
+    <script src="show.js"></script>
+
+</body>
+
+</html>
